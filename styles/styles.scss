@@ -388,6 +388,7 @@ section {
             .icon {
                 display: grid;
                 grid-template-columns: 40px 1fr;
+                align-items: center;
                 i {
                     display: flex;
                     align-items: center;
@@ -489,6 +490,10 @@ section {
 .btn-con {
     display: flex;
     align-self: flex-start;
+    .hover {
+        background-color: var(--color-secondary);
+        transition: all .4s ease-in-out;
+    }
 }
 
 .main-btn {
@@ -503,6 +508,10 @@ section {
     overflow: hidden;
     .btn-text {
         padding: 0 2rem;
+        .btn-text:hover {
+            background-color: var(--color-secondary);
+            transition: all 1s ease-in-out;
+        }
     }
     .btn-icon {
         background-color: var(--color-secondary);

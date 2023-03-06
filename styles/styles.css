@@ -374,6 +374,7 @@ section {
 .contact-content-con .contact-info .contact-item .icon {
   display: grid;
   grid-template-columns: 40px 1fr;
+  align-items: center;
 }
 .contact-content-con .contact-info .contact-item .icon i {
   display: flex;
@@ -473,6 +474,10 @@ section {
   display: flex;
   align-self: flex-start;
 }
+.btn-con .hover {
+  background-color: var(--color-secondary);
+  transition: all 0.4s ease-in-out;
+}
 
 .main-btn {
   border-radius: 55px;
@@ -487,6 +492,10 @@ section {
 }
 .main-btn .btn-text {
   padding: 0 2rem;
+}
+.main-btn .btn-text .btn-text:hover {
+  background-color: var(--color-secondary);
+  transition: all 1s ease-in-out;
 }
 .main-btn .btn-icon {
   background-color: var(--color-secondary);
@@ -795,5 +804,24 @@ section {
   }
   .main-title h2 .bg-text {
     font-size: 4rem;
+  }
+}
+@media screen and (max-width: 1700px) {
+  .header-content {
+    grid-template-columns: repeat(1, 1fr);
+    padding-bottom: 6rem;
+  }
+  .about-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .about-container .right-about {
+    grid-template-columns: repeat(2, 1fr);
+    padding-top: 2.5rem;
+  }
+  .about-container .left-about {
+    padding-right: 0;
+  }
+  .about-container .left-about p {
+    padding-left: 0;
   }
 }/*# sourceMappingURL=styles.css.map */

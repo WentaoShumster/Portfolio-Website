@@ -275,3 +275,23 @@
         }
     }
 }
+
+@media screen and (max-width:1700px) {
+    .header-content {
+        grid-template-columns: repeat(1, 1fr);
+        padding-bottom: 6rem;
+    }
+    .about-container {
+        grid-template-columns: repeat(1, 1fr);
+        .right-about {
+            grid-template-columns: repeat(2, 1fr);
+            padding-top: 2.5rem;
+        }
+        .left-about {
+            padding-right: 0;
+            p {
+                padding-left: 0;
+            }
+        }
+    }
+}
