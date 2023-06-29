@@ -23,7 +23,7 @@
         padding: 0;
     }
     .header-content .typewriter h1 {
-        font-size: 2rem;
+        font-size: 1.5rem;
         align-items: center;
         display: flex;
     }
@@ -61,6 +61,8 @@
         .right-about {
             grid-template-columns: repeat(1, 1fr);
             padding-top: 2.5rem;
+            font-size: .7rem;
+            display: block;
         }
         .left-about {
             padding-right: 0;
@@ -68,6 +70,9 @@
                 padding-left: 0;
             }
         }
+    }
+    .left-about h4 {
+        font-size: 1rem;
     }
     .timeline {
         grid-template-columns: repeat(1, 1fr);
@@ -188,6 +193,7 @@
 @media screen and (max-width:1070px) {
     .about-container {
         grid-template-columns: repeat(1, 1fr);
+        display: block;
         .right-about {
             padding-top: 2.5rem;
         }
